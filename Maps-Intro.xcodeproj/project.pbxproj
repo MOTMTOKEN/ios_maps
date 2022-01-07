@@ -14,6 +14,8 @@
 		63CE21AB27882E3000100121 /* Maps_IntroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE21AA27882E3000100121 /* Maps_IntroTests.swift */; };
 		63CE21B527882E3000100121 /* Maps_IntroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE21B427882E3000100121 /* Maps_IntroUITests.swift */; };
 		63CE21B727882E3000100121 /* Maps_IntroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE21B627882E3000100121 /* Maps_IntroUITestsLaunchTests.swift */; };
+		63CE21C4278832C100100121 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE21C3278832C100100121 /* Place.swift */; };
+		63CE21C62788410100100121 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE21C52788410100100121 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		63CE21B027882E3000100121 /* Maps-IntroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Maps-IntroUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63CE21B427882E3000100121 /* Maps_IntroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maps_IntroUITests.swift; sourceTree = "<group>"; };
 		63CE21B627882E3000100121 /* Maps_IntroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maps_IntroUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		63CE21C3278832C100100121 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		63CE21C52788410100100121 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +100,10 @@
 			children = (
 				63CE219927882E2F00100121 /* Maps_IntroApp.swift */,
 				63CE219B27882E2F00100121 /* ContentView.swift */,
+				63CE21C52788410100100121 /* LocationManager.swift */,
 				63CE219D27882E3000100121 /* Assets.xcassets */,
 				63CE219F27882E3000100121 /* Preview Content */,
+				63CE21C3278832C100100121 /* Place.swift */,
 			);
 			path = "Maps-Intro";
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63CE21C62788410100100121 /* LocationManager.swift in Sources */,
+				63CE21C4278832C100100121 /* Place.swift in Sources */,
 				63CE219C27882E2F00100121 /* ContentView.swift in Sources */,
 				63CE219A27882E2F00100121 /* Maps_IntroApp.swift in Sources */,
 			);
@@ -346,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -401,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -422,6 +430,7 @@
 				DEVELOPMENT_TEAM = GYVUGUT77Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Verkligen verkligen veta";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,6 +460,7 @@
 				DEVELOPMENT_TEAM = GYVUGUT77Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Verkligen verkligen veta";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
